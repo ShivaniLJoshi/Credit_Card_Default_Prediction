@@ -29,7 +29,7 @@ def predict_default(features):
 def main():
 
     html_temp = """
-        <div style = "background-color: #4f8bf9; padding: 10px;">
+        <div style = "background-color: tomato; padding: 10px;">
             <center><h1>CREDIT CARD DEFAULT PREDICTION</h1></center>
         </div><br>
     """
@@ -104,13 +104,7 @@ def main():
         else:
             st.success("This account will not be defaulted with a probability of {}%.".format(round(np.max(probability)*100, 2)))
 
-    html_temp = """
-           <div style = "padding: 10px;">
-               <center><h2>Made by-</h2>
-               <b><i>Rahul Raj Pandey</i><b></center>
-           </div><br>
-       """
-    st.markdown(html_temp, unsafe_allow_html=True)
+   
 
 
 
